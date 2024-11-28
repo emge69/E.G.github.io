@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Kanalım</title>
+    <style>
+        /* Genel Ayarlar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #181818;
+            color: #fff;
+            line-height: 1.6;
+            background-image: url('C:\Users\eg918\Desktop\eg workshop.jpeg'); /* Arka plan görselini buraya ekleyin */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(51, 51, 51, 0.7); /* Yarı şeffaf arka plan */
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff9900;
+        }
+
+        /* Video Bölümü */
+        .content {
+            padding: 40px 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #ff9900;
+        }
+
+        .videos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .video {
+            flex: 1;
+            min-width: 300px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .video iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        .video:hover {
+            transform: scale(1.05);
+        }
+
+        /* About Bölümü */
+        #about p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            background-color: rgba(51, 51, 51, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            color: #ccc;
+        }
+
+        /* Butonlar */
+        .btn {
+            display: inline-block;
+            background-color: #d1d1d1; /* Açık gri */
+            padding: 10px 20px;
+            margin: 10px 0;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff4d4d; /* Kırmızı */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>YouTube Kanalım</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=Q7U-d4OqqZQ" target="_blank" class="btn">Yeni Videolar</a></li>
+                    <li><a href="#about" class="btn">Hakkımızda</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCcJUALpcvyvTtGirAEBJtxA" target="_blank" class="btn">Kanalım</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="content" id="videos">
+            <h2>Yeni Videolar</h2>
+            <div class="videos">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Q7U-d4OqqZQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <!-- Yeni video eklemek için yukarıdaki bloğu çoğaltabilirsiniz -->
+            </div>
+        </section>
+
+        <section class="content" id="about">
+            <h2>Hakkımızda</h2>
+            <p>
+                "Merhaba! Bu kanalda elektrik, elektronik, yazılım ve kendin yap içeriklerini paylaşıyorum. Amacım, teknik alanlara meraklı olanlar için iletilen ve ilham verici videolar sunarak, kendi projelerinizi geliştirmeniz için rehberlik etmek.
+                Kanalımda bulabileceğiniz içerikler:
+                - Elektrik ve elektronik devre tasarımları
+                - Arduino, ve diğer mikrodenetleyicilerle projeler
+                - Yazılım ve kodlama
+                - Kendin yap (DIY) projeleri
+                Eğer siz de teknolojiye, yazılıma ve kendin yap projeleri ile ilgi duyuyorsanız, kanalıma abone olun! Her hafta yeni videolarla dolu içerikler hazırlıyorum. Sorularınızı ve projelerinizi paylaşmak için yorum bırakabilir veya [emgeworkshop@gmail.com] üzerinden benimle iletişime geçebilirsiniz.
+                Topluluğumuzun bir parçası olun ve teknoloji dünyasını birlikte keşfedelim!"
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 YouTube Kanalım. Tüm hakları saklıdır.</p>
+        </footer>
+    </div>
+</body>
+</html>
